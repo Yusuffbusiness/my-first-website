@@ -1,158 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yusuff Business</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        body {
-            font-family: Arial, sans-serif;
-            background: #0f0f0f;
-            color: white;
-        }
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background: #ffffff;
+    color: #111;
+}
 
-        header {
-            display: flex;
-            justify-content: space-between;
-            padding: 20px 50px;
-            background: rgba(255,255,255,0.05);
-            backdrop-filter: blur(10px);
-        }
+/* NAVBAR */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    border-bottom: 1px solid #eee;
+}
 
-        header h1 {
-            color: #00ffcc;
-        }
+header h1 {
+    font-weight: 600;
+    letter-spacing: 2px;
+}
 
-        nav a {
-            color: white;
-            margin-left: 20px;
-            text-decoration: none;
-            transition: 0.3s;
-        }
+nav a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: #111;
+    font-size: 14px;
+}
 
-        nav a:hover {
-            color: #00ffcc;
-        }
+nav a:hover {
+    opacity: 0.6;
+}
 
-        .hero {
-            height: 90vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            text-align: center;
-        }
+/* HERO */
+.hero {
+    height: 90vh;
+    background: url('https://images.unsplash.com/photo-1521335629791-ce4aec67dd47') no-repeat center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-        .hero h2 {
-            font-size: 50px;
-            margin-bottom: 20px;
-        }
+.hero-text {
+    background: rgba(255,255,255,0.85);
+    padding: 40px;
+    text-align: center;
+}
 
-        .hero span {
-            color: #00ffcc;
-        }
+.hero-text h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
 
-        .hero p {
-            opacity: 0.7;
-            margin-bottom: 30px;
-        }
+.hero-text p {
+    margin-bottom: 20px;
+    color: #555;
+}
 
-        .btn {
-            padding: 12px 25px;
-            background: #00ffcc;
-            color: black;
-            border: none;
-            border-radius: 25px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
+.btn {
+    padding: 10px 25px;
+    border: 1px solid black;
+    background: transparent;
+    cursor: pointer;
+}
 
-        .btn:hover {
-            transform: scale(1.1);
-        }
+.btn:hover {
+    background: black;
+    color: white;
+}
 
-        .section {
-            padding: 80px 50px;
-            text-align: center;
-        }
+/* COLLECTION */
+.section {
+    padding: 80px 60px;
+    text-align: center;
+}
 
-        .cards {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            margin-top: 40px;
-            flex-wrap: wrap;
-        }
+.products {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
 
-        .card {
-            background: #1a1a1a;
-            padding: 20px;
-            width: 250px;
-            border-radius: 15px;
-            transition: 0.3s;
-        }
+.product {
+    width: 250px;
+}
 
-        .card:hover {
-            transform: translateY(-10px);
-            background: #222;
-        }
+.product img {
+    width: 100%;
+}
 
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #111;
-            margin-top: 50px;
-        }
-    </style>
+.product h3 {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.product p {
+    color: #777;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    border-top: 1px solid #eee;
+    font-size: 14px;
+}
+</style>
 </head>
 
 <body>
 
 <header>
-    <h1>MySite</h1>
+    <h1>YUSUFF</h1>
     <nav>
         <a href="#">Home</a>
+        <a href="#">Shop</a>
         <a href="#">About</a>
         <a href="#">Contact</a>
     </nav>
 </header>
 
 <section class="hero">
-    <h2>Hi, I'm <span>Your Name</span></h2>
-    <p>I build cool websites 🚀</p>
-    <button class="btn">Explore</button>
+    <div class="hero-text">
+        <h2>Yusuff Business</h2>
+        <p>Minimal. Modern. Timeless.</p>
+        <button class="btn">Shop Now</button>
+    </div>
 </section>
 
 <section class="section">
-    <h2>What I Do</h2>
+    <h2>New Collection</h2>
 
-    <div class="cards">
-        <div class="card">
-            <h3>Web Design</h3>
-            <p>Modern and clean UI design</p>
+    <div class="products">
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1516826957135-700dedea698c">
+            <h3>Classic White Tee</h3>
+            <p>₹999</p>
         </div>
 
-        <div class="card">
-            <h3>Development</h3>
-            <p>Fast and responsive websites</p>
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b">
+            <h3>Urban Hoodie</h3>
+            <p>₹1999</p>
         </div>
 
-        <div class="card">
-            <h3>Projects</h3>
-            <p>Creative and unique ideas</p>
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c">
+            <h3>Denim Jacket</h3>
+            <p>₹2499</p>
         </div>
     </div>
 </section>
 
 <footer>
-    <p>© 2026 My Website | Built with ❤️</p>
+    <p>© 2026 Yusuff Business</p>
 </footer>
 
 </body>
