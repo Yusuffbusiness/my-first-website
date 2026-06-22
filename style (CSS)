@@ -6,3 +6,11 @@
         font-family: Arial;
     }
 </style>
+.product img {
+    width: 100%;
+    transition: 0.3s;
+}
+
+.product:hover img {
+    transform: scale(1.05);
+}
